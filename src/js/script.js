@@ -1,81 +1,34 @@
 const langButtons = document.querySelectorAll("[data-btn]");
-const allLangs = ["ru", "en", "de"];
+const allLangs = ["en", "ru"];
 const currentPathName = window.location.pathname;
-let currentLang =
-	localStorage.getItem("language") || checkBrowserLang() || "ru";
+
+let currentLang = localStorage.getItem("language") || checkBrowserLang() || "en";
 let currentTexts = {};
 
 const homeTexts = {
 	"home_page-title": {
-		ru: "Домашняя страница",
 		en: "Homepage",
-		de: "Startseite",
+		ru: "Домашняя страница",
 	},
 	"home_page-1": {
-		ru: "Первый параграф",
 		en: "First paragraph",
-		de: "Erster Paragraph",
+		ru: "Первый параграф",
 	},
 	"home_page-2": {
-		ru: "Второй параграф",
 		en: "Second paragraph",
-		de: "Zweiter Absatz",
+		ru: "Второй параграф",
 	},
 	"home_page-3": {
-		ru: "Третий параграф",
 		en: "Third paragraph",
-		de: "Dritter Absatz",
+		ru: "Третий параграф",
 	},
 	"home_page-4": {
-		ru: "Другая страница",
 		en: "Another page",
-		de: "Eine andere Seite",
-	},
-};
-const anotherTexts = {
-	"another_page-title": {
 		ru: "Другая страница",
-		en: "Another page",
-		de: "Eine andere Seite",
-	},
-	"another_page-1": {
-		ru: "Первый параграф",
-		en: "First paragraph on another page",
-		de: "Erster Paragraph auf einer anderen Seite",
-	},
-	"another_page-2": {
-		ru: "Второй параграф",
-		en: "Second paragraph on another page",
-		de: "Zweiter Absatz auf einer anderen Seite",
-	},
-	"another_page-3": {
-		ru: "Третий параграф",
-		en: "Third paragraph on another page",
-		de: "Dritter Absatz auf einer anderen Seite",
-	},
-	"another_page-4": {
-		ru: "Домашняя страница",
-		en: "Homepage",
-		de: "Startseite",
 	},
 };
 
-// Проверка пути страницы сайта
-function checkPagePathName() {
-	switch (currentPathName) {
-		case "/index.html":
-			currentTexts = homeTexts;
-			break;
-		case "/another_page.html":
-			currentTexts = anotherTexts;
-			break;
-
-		default:
-			currentTexts = homeTexts;
-			break;
-	}
-}
-checkPagePathName();
+currentTexts = homeTexts;
 
 // Изменение языка у текстов
 function changeLang() {
@@ -111,25 +64,19 @@ function resetActiveClass(arr, activeClass) {
 // Проверка активной кнопки
 function checkActiveLangButton() {
 	switch (currentLang) {
-		case "ru":
-			document
-				.querySelector('[data-btn="ru"]')
-				.classList.add("header__btn_active");
-			break;
 		case "en":
 			document
 				.querySelector('[data-btn="en"]')
 				.classList.add("header__btn_active");
 			break;
-		case "de":
-			document
-				.querySelector('[data-btn="de"]')
-				.classList.add("header__btn_active");
-			break;
-
-		default:
+		case "ru":
 			document
 				.querySelector('[data-btn="ru"]')
+				.classList.add("header__btn_active");
+			break;
+		default:
+			document
+				.querySelector('[data-btn="en"]')
 				.classList.add("header__btn_active");
 			break;
 	}
@@ -147,4 +94,19 @@ function checkBrowserLang() {
 	}
 }
 
-console.log("navigator.language", checkBrowserLang());
+// console.log("navigator.language", checkBrowserLang());
+// console.log("currentPathName:", currentPathName);
+
+// dropdown функция
+function setLanguage(language, flagSrc) {
+	const button = document.getElementById('language-button');
+	button.innerHTML = `<img src="${flagSrc}" alt="${language}" class="flag">${language}`;
+}
+
+// ставим английский язык по умолчанию
+window.onload = function() {
+	setLanguage('EN', 'icons/EN-flag-icon.svg');
+};
+
+
+

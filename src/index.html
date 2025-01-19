@@ -12,10 +12,23 @@
 
     <body>
         <header class="header">
+
+            <div class="dropdown">
+                <button id="language-button">Language</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="setLanguage('RU', 'icons/RU-flag-icon.svg')">
+                        <img src="icons/RU-flag-icon.svg" alt="RU" class="flag">RU
+                    </a>
+                    <a href="#" onclick="setLanguage('EN', 'icons/EN-flag-icon.svg')">
+                        <img src="icons/EN-flag-icon.svg" alt="EN" class="flag">EN
+                    </a>
+                </div>
+            </div>
+
             <div class="container">
-                <button class="header__btn" data-btn="ru">Ru</button>
                 <button class="header__btn" data-btn="en">En</button>
-                <button class="header__btn" data-btn="de">De</button>
+                <button class="header__btn" data-btn="ru">Ru</button>
+                <!-- <button class="header__btn" data-btn="de">De</button> -->
             </div>
         </header>
         <main class="multi">
@@ -29,13 +42,13 @@
                 <p class="multi__text" data-lang="home_page-3">
                     Третий параграф на стартовой странице
                 </p>
-                <a
+                <!-- <a
                     href="another_page.html"
                     class="multi__link"
                     data-lang="home_page-4"
                 >
                     Ссылка на стартовой странице
-                </a>
+                </a> -->
             </div>
         </main>
 
