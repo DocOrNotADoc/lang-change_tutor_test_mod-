@@ -17,13 +17,70 @@ function checkBrowserLang() {
 
 //текты
 const translatedTexts = {
-	"home_page-title": {
-		en: "Homepage",
-		ru: "Домашняя страница",
+	"sidepanel-descr": {
+		en: "Social media",
+		ru: "Социальные сети",
 	},
+	"menu_about-me": {
+		en: "About me",
+		ru: "Про меня",
+	},
+	"menu_my-experience": {
+		en: "My experience",
+		ru: "Мой опыт",
+	},
+	"menu_my-works": {
+		en: "My works",
+		ru: "Мои работы",
+	},
+	"menu_my-skills": {
+		en: "My skills",
+		ru: "Мои навыки",
+	},
+	"menu_contacts": {
+		en: "Contacts",
+		ru: "Контакты",
+	},
+	"portfolio_ttl": {
+		en: "Portfolio",
+		ru: "Портфолио",
+	},
+	"portfolio_ttl-1": {
+		en: "Portfolio",
+		ru: "Портфолио",
+	},
+	"about-me_ttl": {
+		en: "Abut me",
+		ru: "Про меня",
+	},
+	"about-me_ttl-1": {
+		en: "Abut me",
+		ru: "Про меня",
+	},
+	"about-me_name": {
+		en: "My name is Viktor",
+		ru: "Меня зовут Виктор",
+	},
+	// "about-me_descr": {
+	// 	en: "Abut me",
+	// 	ru: "Моё предыдущее место работы связано с музыкой. Я меняю сферу работы. Для этого я много узнал и многому научился.<br>
+	// 	HTML оказался не сложнее нотной грамоты. JS сложнее :) А библиотека React - это просто конфетка.",
+	// },
+
+
+	"about-me_ttl": {
+		en: "Abut me",
+		ru: "Обо мне",
+	},
+
+
+
+
 	"home_page-1": {
-		en: "First paragraph",
-		ru: "Первый параграф",
+		en: "Abut me",
+		ru: "Моё предыдущее место работы связано с музыкой. Я меняю сферу работы. Для этого я много узнал и многому научился."
+		// <br>
+		// HTML оказался не сложнее нотной грамоты. JS сложнее :) А библиотека React - это просто конфетка.",
 	},
 	"home_page-2": {
 		en: "Second paragraph",
@@ -53,7 +110,6 @@ langButtons.forEach((btn) => {
 	btn.addEventListener("click", (event) => {
 		userLang = event.target.dataset.btn;
 		localStorage.setItem("language", event.target.dataset.btn);
-		// console.log(event.target.dataset.btn);
 		changeLang();
 	});
 });
