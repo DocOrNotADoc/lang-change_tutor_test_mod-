@@ -61,11 +61,63 @@ const translatedTexts = {
 		en: "My name is Viktor",
 		ru: "Меня зовут Виктор",
 	},
-	// "about-me_descr": {
-	// 	en: "Abut me",
-	// 	ru: "Моё предыдущее место работы связано с музыкой. Я меняю сферу работы. Для этого я много узнал и многому научился.<br>
-	// 	HTML оказался не сложнее нотной грамоты. JS сложнее :) А библиотека React - это просто конфетка.",
-	// },
+	"about-me_descr-1": {
+		en: "My previous job was in music. I am changing my field of work. For this I have learned and experienced a lot.",
+		ru: "Моё предыдущее место работы связано с музыкой. Я меняю сферу работы. Для этого я много узнал и многому научился.",
+	},
+	"about-me_descr-2": {
+		en: "HTML turned out to be no more difficult than musical notation. JS is more difficult :) And the React library is just a gem.",
+		ru: "HTML оказался не сложнее нотной грамоты. JS сложнее :) А библиотека React - это просто конфетка.",
+	},
+	"about-me_skill-1": {
+		en: "Web-development",
+		ru: "Web-разработка",
+	},
+	"about-me_skill-1-descr": {
+		en: "I can layout websites from a mockup(PSD/Figma). I can make adaptive layout. I can add interactivity via Javascript, or change page content via JS. I can write SPA on the React library. The projects in my practice are educational. And all of them are real and full-fledged.",
+		ru: "Умею верстать сайты с макета. Умею делать адаптивную вёрстку. Умею добавлять интерактив посредством Javascript, или менять через JS содержимое страницы. Умею писать SPA на библиотеке React. Проекты в моей практике являются учебными. И все они реальны и полноценны.",
+	},
+	"benefits-educations_ttl-1": {
+		en: "Education",
+		ru: "Образование",
+	},
+	"benefits-educations_ttl-2": {
+		en: "How can i be useful",
+		ru: "Чем я буду полезен",
+	},
+	"benefits-educations_column-ttl-1": {
+		en: "Academic education",
+		ru: "Академическое образование",
+	},
+	"benefits-educations_column-1_item-1_ttl": {
+		en: "MPGU",
+		ru: "МПГУ",
+	},
+	"benefits-educations_column-1_item-1_degree": {
+		en: "Specialist diploma | Moscow (2005-2011)",
+		ru: "Диплом специалиста | Москва (2005-2011)",
+	},
+	"benefits-educations_column-1_item-1_descr-1": {
+		en: "Moscow State Pedagogical University. Faculty of music.",
+		ru: "Московский педагогический государственный университет. Музыкальный факультет.",
+	},
+	"benefits-educations_column-1_item-1_descr-2": {
+		en: "Moscow State Pedagogical University is the leading pedagogical university in Russia. I changed my professional field. Understanding the principles of the learning process helped me with this.",
+		ru: "МПГУ - это ведущий педагогический университет в России. Я сменил сферу профессиональной деятельности. Понимание принципов процесса обучения помогло мне в этом.",
+	},
+	"benefits-educations_column-ttl-2": {
+		en: "Courses",
+		ru: "Курсы",
+	},
+
+
+	"benefits-educations_column-2_item-1_degree": {
+		en: "Courses",
+		ru: "Курс \"WEB-разработчик 2021\" от Ивана Петриченко",
+	},
+
+
+
 
 
 	"about-me_ttl": {
@@ -74,7 +126,16 @@ const translatedTexts = {
 	},
 
 
+	"about-me_ttl": {
+		en: "Abut me",
+		ru: "Обо мне",
+	},
 
+
+	"about-me_ttl": {
+		en: "Abut me",
+		ru: "Обо мне",
+	},
 
 	"home_page-1": {
 		en: "Abut me",
@@ -84,7 +145,7 @@ const translatedTexts = {
 	},
 	"home_page-2": {
 		en: "Second paragraph",
-		ru: "Второй параграф",
+		ru: "Курс \"WEB-разработчик 2021\" от Ивана Петриченко",
 	},
 	"home_page-3": {
 		en: "Third paragraph",

@@ -41,19 +41,15 @@ const translatedTexts = {
 		en: "Contacts",
 		ru: "Контакты",
 	},
-	"portfolio_ttl": {
+	"promo_btn-portfolio": {
 		en: "Portfolio",
 		ru: "Портфолио",
 	},
-	"portfolio_ttl-1": {
-		en: "Portfolio",
-		ru: "Портфолио",
-	},
-	"about-me_ttl": {
+	"promo_btn-about-me": {
 		en: "Abut me",
 		ru: "Про меня",
 	},
-	"about-me_ttl-1": {
+	"about-me_ttl": {
 		en: "Abut me",
 		ru: "Про меня",
 	},
@@ -74,9 +70,66 @@ const translatedTexts = {
 		ru: "Web-разработка",
 	},
 	"about-me_skill-1-descr": {
-		en: "I can layout websites from a mockup(PSD/Figma). I can make adaptive layout. I can add interactivity via Javascript, or change page content via JS. I can write SPA on the React library. The projects in my practice are educational. And all of them are real and full-fledged.",
-		ru: "Умею верстать сайты с макета. Умею делать адаптивную вёрстку. Умею добавлять интерактив посредством Javascript, или менять через JS содержимое страницы. Умею писать SPA на библиотеке React. Проекты в моей практике являются учебными. И все они реальны и полноценны.",
+		en: "I make up websites from a layout in Figma or Photoshop. I make adaptive layout of websites for different types of devices. I make them interactive using Javascript. I create SPA on the React library. The projects in my practice are educational. And all of them are real and full-fledged.",
+		ru: "Верстаю сайты с макета в Figma или Photoshop. Делаю адаптивную вёрстку сайтов для разных типов устройств. Делаю интерактивными с помощью Javascript. Создаю SPA на библиотеке React. Проекты в моей практике являются учебными. И все они реальны и полноценны.",
 	},
+	"benefits-educations_ttl-1": {
+		en: "Education",
+		ru: "Образование",
+	},
+	"benefits-educations_ttl-2": {
+		en: "How can i be useful",
+		ru: "Чем я буду полезен",
+	},
+	"benefits-educations_column-1_ttl": {
+		en: "Academic education",
+		ru: "Академическое образование",
+	},
+	"benefits-educations_column-1_item-1_ttl": {
+		en: "MPGU",
+		ru: "МПГУ",
+	},
+	"benefits-educations_column-1_item-1_degree": {
+		en: "Specialist diploma | Moscow (2005-2011)",
+		ru: "Диплом специалиста | Москва (2005-2011)",
+	},
+	"benefits-educations_column-1_item-1_descr-1": {
+		en: "Moscow State Pedagogical University. Faculty of music.",
+		ru: "Московский педагогический государственный университет. Музыкальный факультет.",
+	},
+	"benefits-educations_column-1_item-1_descr-2": {
+		en: "Moscow State Pedagogical University is the leading pedagogical university in Russia. I changed my professional field. Understanding the principles of the learning process helped me with this.",
+		ru: "МПГУ - это ведущий педагогический университет в России. Я сменил сферу профессиональной деятельности. Понимание принципов процесса обучения помогло мне в этом.",
+	},
+	"benefits-educations_column-2_ttl": {
+		en: "Courses",
+		ru: "Курсы",
+	},
+	"benefits-educations_column-2_item-1_degree": {
+		en: "Course \"Web Developer 2021\" by Ivan Petrichenko",
+		ru: "Курс \"WEB-разработчик 2021\" от Ивана Петриченко",
+	},
+	"benefits-educations_column-2_item-1_descr": {
+		en: "In this course I learned how to use HTML and CSS to develop websites. Also, during the course, I learned how to use modern software necessary for work in practice.",
+		ru: "В этом курсе я научился использовать HTML и CSS для разработки сайтов. Так же, во время прохождения курса, я научился использовать на практике современное программное обеспечение, необходимое для работы.",
+	},
+	"benefits-educations_column-2_item-2_degree": {
+		en: "JavaScript + React course by Ivan Petrichenko",
+		ru: "Курс по JavaScript + React от Ивана Петриченко",
+	},
+	"benefits-educations_column-2_item-2_descr": {
+		en: "In this course I learned how to use Javascript to make a website interact with visitors.",
+		ru: "В этом курсе я научился использовать Javascript для того, чтобы сайт взаимодействовал с посетителями.",
+	},
+	"portfolio_ttl-1": {
+		en: "Portfolio",
+		ru: "Портфолио",
+	},
+	"portfolio_ttl-2": {
+		en: "My works",
+		ru: "Мои работы",
+	},
+
 
 
 
@@ -86,7 +139,10 @@ const translatedTexts = {
 	},
 
 
-
+	"about-me_ttl": {
+		en: "Abut me",
+		ru: "Обо мне",
+	},
 
 	"home_page-1": {
 		en: "Abut me",
@@ -95,8 +151,8 @@ const translatedTexts = {
 		// HTML оказался не сложнее нотной грамоты. JS сложнее :) А библиотека React - это просто конфетка.",
 	},
 	"home_page-2": {
-		en: "Second paragraph",
-		ru: "Второй параграф",
+		en: "Course \"Web Developer 2021\" by Ivan Petrichenko",
+		ru: "Курс \"WEB-разработчик 2021\" от Ивана Петриченко",
 	},
 	"home_page-3": {
 		en: "Third paragraph",
